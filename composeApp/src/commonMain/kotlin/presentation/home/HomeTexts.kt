@@ -12,17 +12,17 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import theme.*
+import theme.black
+import theme.grey
+import theme.primary
 
 @Composable
 fun DescriptionText(){
     Column(modifier = Modifier.wrapContentWidth()){
         Text(
             text = "Enny is a dynamic QR code generator. It allows users to easily create customized QR codes for sharing or embedding on their website.",
-            style = ennyTextStyle().copy(
-                color = grey,
-                fontSize = 16.sp
-            ),
+            fontSize = 16.sp,
+            color = grey,
             modifier = Modifier.width(400.dp),
             textAlign = TextAlign.Center
         )
@@ -36,13 +36,13 @@ fun HeaderText(){
         append(
             AnnotatedString(
                 text = "Dynamic ",
-                spanStyle = SpanStyle(color = primary, fontSize = 46.sp, fontWeight = FontWeight.ExtraBold, fontFamily = Jarkata())
+                spanStyle = SpanStyle(color = primary, fontSize = 46.sp, fontWeight = FontWeight.ExtraBold)
             )
         )
         append(
             AnnotatedString(
                 text = "QR Codes.",
-                spanStyle = SpanStyle(color = black, fontSize = 46.sp, fontWeight = FontWeight.ExtraBold, fontFamily = Jarkata()),
+                spanStyle = SpanStyle(color = black, fontSize = 46.sp, fontWeight = FontWeight.ExtraBold),
             )
         )
     }
@@ -53,11 +53,9 @@ fun HeaderText(){
     ) {
         Text(
             text = "Generate and Publish",
-            style = ennyTextStyle().copy(
-                color = black,
-                fontSize = 46.sp,
-                fontWeight = FontWeight.ExtraBold
-            )
+            color = black,
+            fontSize = 46.sp,
+            fontWeight = FontWeight.ExtraBold
         )
         Text(
             text = text

@@ -23,7 +23,7 @@ import org.jetbrains.compose.resources.ExperimentalResourceApi
 import presentation.addBackground
 import presentation.downloadImage
 import presentation.painterResource
-import theme.ennyTextStyle
+import theme.black
 import theme.white
 
 @OptIn(ExperimentalResourceApi::class)
@@ -58,10 +58,9 @@ fun QrPreview(
     ){
         Text(
             text = "Enter your content",
-            style = ennyTextStyle().copy(
-                fontWeight = FontWeight.Bold,
-                fontSize = 18.sp
-            )
+            fontWeight = FontWeight.Bold,
+            fontSize = 18.sp,
+            color = black
         )
 
         EnnyTextField(
@@ -74,10 +73,9 @@ fun QrPreview(
 
         Text(
             text = "Live Preview",
-            style = ennyTextStyle().copy(
-                fontWeight = FontWeight.Bold,
-                fontSize = 18.sp
-            )
+            fontWeight = FontWeight.Bold,
+            fontSize = 18.sp,
+            color = black
         )
 
         Image(

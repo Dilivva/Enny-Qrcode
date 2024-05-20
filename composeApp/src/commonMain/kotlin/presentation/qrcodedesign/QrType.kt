@@ -42,11 +42,9 @@ fun QrType(
     ){
         Text(
             text = "Destination",
-            style = ennyTextStyle().copy(
-                color = black,
-                fontSize = 16.sp,
-                fontWeight = FontWeight.Bold
-            )
+            color = black,
+            fontSize = 16.sp,
+            fontWeight = FontWeight.Bold
         )
 
         LazyVerticalGrid(
@@ -98,11 +96,9 @@ private fun TypeItem(
         }
         Text(
             text = text,
-            style = ennyTextStyle().copy(
-                color = black,
-                fontSize = 12.sp,
-                fontWeight = FontWeight.Bold
-            )
+            color = black,
+            fontSize = 12.sp,
+            fontWeight = FontWeight.Bold
         )
     }
 }

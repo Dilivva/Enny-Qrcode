@@ -29,9 +29,8 @@ fun Painter.addBackground(
         drawRect(
             color = white,
             topLeft = Offset.Zero,
-            size = Size(this.size.width, this.size.height),
+            size = Size(this.size.width + 10, this.size.height + 10),
         )
-
         draw(this@draw.size, alpha)
     }
 

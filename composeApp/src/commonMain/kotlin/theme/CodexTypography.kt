@@ -3,7 +3,6 @@ package theme
 
 import androidx.compose.material.Typography
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import codex.composeapp.generated.resources.*
@@ -18,14 +17,6 @@ fun Jarkata(): FontFamily{
         Font(Res.font.jakarta_semibold, weight = FontWeight.SemiBold),
         Font(Res.font.jakarta_bold, weight = FontWeight.Bold),
         Font(Res.font.jakarta_medium, weight = FontWeight.Medium)
-    )
-}
-
-val ennyTextStyle = @Composable {
-    TextStyle(
-        fontFamily = Jarkata(),
-        color = black,
-        fontWeight = FontWeight.Normal
     )
 }
 

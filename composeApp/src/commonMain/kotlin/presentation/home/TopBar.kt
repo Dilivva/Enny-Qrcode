@@ -16,7 +16,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import theme.ennyTextStyle
 import theme.greyLight
 import theme.primary
 
@@ -41,11 +40,9 @@ fun TopBar(
 
             Text(
                 text = "Enny",
-                style = ennyTextStyle().copy(
-                    color = primary,
-                    fontWeight = FontWeight.Black,
-                    fontSize = 18.sp
-                )
+                color = primary,
+                fontWeight = FontWeight.Black,
+                fontSize = 18.sp
             )
             Spacer(modifier = Modifier.weight(1f))
             AnimatedVisibility(

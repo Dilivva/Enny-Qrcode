@@ -106,7 +106,7 @@ fun EnnyTextField(
             enabled = enabled,
             singleLine = true,
             onValueChange = onTextChange,
-            textStyle = ennyTextStyle().copy(
+            textStyle = MaterialTheme.typography.body1.copy(
                 fontSize = 16.sp
             ),
             keyboardOptions = KeyboardOptions.Default.copy(

@@ -23,7 +23,10 @@ import io.github.alexzhirkevich.qrose.rememberQrCodePainter
 import kotlinx.coroutines.launch
 import presentation.FilePicker
 import presentation.readFileAsByteArray
-import theme.*
+import theme.black
+import theme.greyLight
+import theme.primary
+import theme.white
 
 /**
  * Qr style
@@ -106,11 +109,9 @@ fun QrStyle(
         item(span = { GridItemSpan(5) }) {
             Text(
                 text = "Pattern",
-                style = ennyTextStyle().copy(
-                    color = black,
-                    fontSize = 16.sp,
-                    fontWeight = FontWeight.Bold
-                ),
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = black,
                 modifier = Modifier
             )
         }
@@ -125,11 +126,9 @@ fun QrStyle(
         item(span = { GridItemSpan(5) }) {
             Text(
                 text = "Colors",
-                style = ennyTextStyle().copy(
-                    color = black,
-                    fontSize = 16.sp,
-                    fontWeight = FontWeight.Bold
-                )
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = black
             )
         }
         items(colors){
@@ -142,11 +141,9 @@ fun QrStyle(
         item(span = { GridItemSpan(5) }) {
             Text(
                 text = "Add logo",
-                style = ennyTextStyle().copy(
-                    color = black,
-                    fontSize = 16.sp,
-                    fontWeight = FontWeight.Bold
-                )
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = black
             )
         }
         item(span = { GridItemSpan(5) }) {
